@@ -1,0 +1,12 @@
+<launch>
+<!--Launch file for keyboard control, can drive the robot to move
+forward, backward, turn left, and turn right by hitting keyboard arrows-->
+
+<include file="$(find pico_flexx_driver)/launch/pico_flexx_driver.launch" />
+<!--param name="move_base/local_costmap/resolution" value="0.5"/-->
+
+<node name="motor" pkg="motor" type="motor.py" output="screen">
+</node>
+
+  
+</launch>

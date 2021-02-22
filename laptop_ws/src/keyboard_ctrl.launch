@@ -1,0 +1,11 @@
+<launch>
+<!--Launch file for keyboard control, can drive the robot to move
+forward, backward, turn left, and turn right by hitting keyboard arrows-->
+
+<node name="turtle_teleop_key" pkg="turtlesim" type="turtle_teleop_key">
+</node>
+
+<node name="keyboard_ctrl" pkg="controller" type="keyboard_ctrl">
+</node>
+  
+</launch>

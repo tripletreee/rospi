@@ -13,6 +13,32 @@ https://github.com/code-iai/pico_flexx_driver
 Notes: There are extra packages required for the driver. Since thr RPi 3B ROS was installed from source, so the installation for new packages should follow Section 4.2 in 
 http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Kinetic%20on%20the%20Raspberry%20Pi
 
+# source code
+The source code contains two parts, laptop workspace and RPi workspace.
+
+ROS packages in laptop:
+1. communication: A basic publisher & subscriber node to test the communication between laptop and RPi when running a common ros core.
+
+2. controller: Move the car by hitting up, down, left, and right buttons on the keyboard.
+
+ROS packages in RPi:
+1. communication_test: A basic publisher & subscriber node to test the communication between laptop and RPi when running a common ros core.
+
+2. pico_flexx_driver
+
+3. motor: motor communication interface to keyboard control 
+
+
+# how to run
+1. In RPi, cd to the ~/catkin_ws, then run
+   roslaunch src/car.launch
+This will start the pico_flexx camera and the keyboard control.
+
+2. In laptop, in the workspace, run
+   roslaunch src/keyboard_ctrl.launch
+Then the car can be controlled by keyboard
+
+
 Project architecture
 ![alt text](/Diagrams/Architecture.jpg)
 
