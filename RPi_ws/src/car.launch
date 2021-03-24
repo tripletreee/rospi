@@ -8,5 +8,8 @@ forward, backward, turn left, and turn right by hitting keyboard arrows-->
 <node name="motor" pkg="motor" type="motor.py" output="screen">
 </node>
 
+<node name="imu_driver" pkg="imu_driver" type="imu_driver" output="screen">
+</node>
+
   
 </launch>

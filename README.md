@@ -26,7 +26,10 @@ ROS packages in RPi:
 
 2. pico_flexx_driver
 
-3. motor: motor communication interface to keyboard control 
+3. motor: motor communication interface to keyboard control
+
+4. imu_driver: ROS driver for IMU. Create ROS interface on top of the original driver:
+https://github.com/DavidEGrayson/minimu9-ahrs
 
 
 # how to run
