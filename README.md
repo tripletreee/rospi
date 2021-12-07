@@ -19,7 +19,7 @@ The source code contains two parts, laptop workspace and RPi workspace.
 ROS packages in laptop:
 1. communication: A basic publisher & subscriber node to test the communication between laptop and RPi when running a common ros core.
 
-2. controller: Move the car by hitting up, down, left, and right buttons on the keyboard.
+2. controller: Move the car by hitting up, down, left, and right buttons on the keyboard..
 
 ROS packages in RPi:
 1. communication_test: A basic publisher & subscriber node to test the communication between laptop and RPi when running a common ros core.
